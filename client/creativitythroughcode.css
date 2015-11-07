@@ -1,0 +1,23 @@
+/* CSS declarations go here */
+body{
+
+ font-family:'Eczar', serif;
+    
+}
+
+.top{
+background-image:url('http://www.zingerbugimages.com/backgrounds/pastel_plasma_colors.jpg'); 
+    height: 50vh;
+    text-align:center;
+}
+
+
+.top img{
+ padding-top: 20px;
+border-radius:150px;
+}
+
+.top div{
+padding-top:50px;
+}
+
