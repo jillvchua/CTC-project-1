@@ -6,7 +6,7 @@ body{
 }
 
 .top{
-background-image:url('http://www.zingerbugimages.com/backgrounds/pastel_plasma_colors.jpg'); 
+background-image:url('http://wallpapercave.com/wp/NaMsVGb.png'); 
     height: 50vh;
     text-align:center;
 }
@@ -21,3 +21,38 @@ border-radius:150px;
 padding-top:50px;
 }
 
+nav{
+min-height:50px;  
+background-color: #ffa500
+}
+
+nav div{
+    padding-top:5px;
+}
+
+nav a:hover{
+    color:aqua;
+    text-decoration: none
+}
+
+nav a  h4{
+ opacity:0.7;   
+}
+
+nav a h4:hover{
+ opacity:1;   
+}
+
+footer ul li{
+    list-style:none;
+}
+
+footer{
+    background-color: #ffa500;
+    height: 100px;
+   margin-top: 30px;
+}
+
+footer .row{
+    background-color: #ffa500
+}

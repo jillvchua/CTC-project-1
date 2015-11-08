@@ -11,6 +11,7 @@
 
 
 <template name="about">
+    {{> navbar}}
     <body>
         <header class="top">
     
@@ -21,7 +22,7 @@
             </div>
         </header>
         <div style="height:15vh; text-align: center">
-        <h1>Look at all the options you can choose from!</h1>
+        <h3>Look at all the options you can choose from!</h3>
          </div>
         <div class="col-md-4 col-sm-4 col-sx-4" style="background-color:cyan;height: 20vh;text-align: center">
             <a href="/photo-gallery"><h1 style="color: black">The PHOTO Veranda!</h1></a>
@@ -29,33 +30,37 @@
         </div>
         <div class="col-md-4 col-sm-4 col-sx-4" style=" background-color:red;height: 20vh; text-align: center">
             <a href="/pusheen-styles"><h1 style="color: black">The ART gallery section!</h1></a>
-            <p style="color:black">See different styles of pusheens!</p>
+            <h3 style="color:black">See different styles of pusheens!</h3>
         </div>
         <div class="col-md-4 col-sm-4 col-sx-4" style="background-color: purple;height: 20vh; text-align: center">
         <h1 style="color: white">Draw your own Pusheen!</h1>
-            <p style="color: white">feel free to check the picture page for more ideas!</p>
+            <h3 style="color: white">feel free to check the picture page for more ideas!</h3>
         </div>
-        <div>
-            <a href="/Contacts"></a><h1>Contact us Now!</h1></a>
-        </div>
+       
     </body>
-
+{{> footer}}
 </template>
 
 <template name="gallery">
+{{> navbar}}
 <div>
-  <h1>Lots of Different Sections!</h1> 
+  <h1 style= "text-align: center">Lots of Different categories!</h1> 
     </div>
     
 <div>   
-   <h1 style="border-style:dotted; border-color:red; ">New Years!</h1> 
-    <img src=http://static.fjcdn.com/pictures/Happy+new+year+to+all+of+fj+pusheen+wishes+you_eb5f27_4337984.png>
+   <h3 style="border-style:dotted; border-color:red; text-align: center; background-color: red">New Years!</h3> 
+    <img src="http://static.fjcdn.com/pictures/Happy+new+year+to+all+of+fj+pusheen+wishes+you_eb5f27_4337984.png" height="272" width="277">
+   
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/2b/3d/78/2b3d78110ad008fcbc6c180527231279.jpg" height="206" width="225"> 
     
+    <img src="http://25.media.tumblr.com/6a13b9b97d762e188d509f9eba6dca3f/tumblr_mfw99lmiQJ1qla81to1_500.gif" height="200" width="320">
     
-</div>
+    </div>
+{{>footer}}
 </template>
 
 <template name="styles">
+    {{> navbar}}
     <div>
 <h1 style="text-align:center">The STYLES of Pusheens!!!</h1>
         
@@ -63,14 +68,77 @@
 </template>
 
 <template name="Contacts">
+    {{> navbar}}
+    <div class="col-md-12">
     <div class="col-md-3">
-    <form action='https://www.getform.org/f/0557f5a6-88c8-41a6-9e79-e520dede7245' method="POST">
+    {{>Contacts}}
+     {{>footer}}
+        </div>
+    </div>
+   
+</template>
+<template name="contact-form">
+    <form action='https://www.getform.org/f/e0d71780-0852-4de5-87b3-e4d7797228bc' method="POST">
     <input type="text" class="form-control" placeholder="name" name="name">
-    <input type="email" class="form-control" placeholder="email" name="emal">
+    <input type="email" class="form-control" placeholder="email" name="email">
      <textarea class="form-control" rows="6" placeholder="message" name="message"></textarea> 
        
         <button type="submit" class="btn">Submit</button>
        
         </form>
-    </div>
+
 </template>
+<template name="navbar">
+
+<nav>
+<div class="col-md-1 col-md-offset-7">
+<a href="/"><h4>Home</h4></a>
+</div> 
+<div class="col-md-1">
+<a href="photo-gallery"><h4>Gallery</h4></a>
+</div> 
+<div class="col-md-1">
+<a href="/pusheen-styles"><h4>Styles</h4></a>
+</div> 
+<div class="col-md-1">
+<h4>Draw</h4>
+</div> 
+<div class="col-md-1">
+<a href="/contact"><h4>Contact</h4></a>    
+</div> 
+
+     </nav>
+
+</template>
+
+<template name="footer">
+<footer>
+ <div class="row">
+ <div class="col-md-4">
+   <div class="container"> 
+<ul>
+    <a href="/"><li>Home</li></a> 
+   <a href="/photo-gallery"><li>Gallery</li></a>
+    <a href="/pusheen-</a>styles"><li>Styles</li> </a>
+    <li>Draw</li>
+    <a href="/contact"><li>Contact</li></a>
+        
+</ul>
+    </div>
+    </div>
+ 
+    <div class="col-md-4">
+    <h3 style="font-weight: 600">About US</h3>
+    <p>Pusheens Rock is a web designing system made for cats.</p>
+     </div>
+
+    <div class="col-md-4">
+    <div class="row">
+    <div class="col-md-8 contact-form-footer">
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+</template>
+
