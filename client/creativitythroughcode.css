@@ -7,7 +7,7 @@ body{
 
 .top{
 background-image:url('http://wallpapercave.com/wp/NaMsVGb.png'); 
-    height: 50vh;
+    min-height: height: 50vh;
     text-align:center;
 }
 
@@ -56,3 +56,4 @@ footer{
 footer .row{
     background-color: #ffa500
 }
+
